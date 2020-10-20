@@ -22,7 +22,7 @@ title: Evolutionary computation
 email: zhenlingcn@foxmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a blog for posting some advanced articles for evolutionary computation and machine learning domains.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zhenlingcn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
