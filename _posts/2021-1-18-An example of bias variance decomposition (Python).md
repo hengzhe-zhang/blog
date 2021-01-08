@@ -62,8 +62,6 @@ def bias_variance_decomposition(regr):
 Finally, we will apply bias-variance decomposition to some classical machine learning algorithms, and we plan to find the root of error for these machine learning algorithms. We selected two classical algorithms, decision tree, and linear regression.
 First, after calculating related error items of decision tree and linear regression. We discovered that although the expected errors in the decision tree and linear regression are similar, the majority of errors in linear regression originate from bias, while the majority of errors in the decision tree originate from variance. Based on the observed result, we can guess that there exists a huge margin to reduce the error of the decision tree by reducing the variance. Therefore, we try to reduce the variance by using the ensemble method. By applying the bagging method, we found that the error was reduced. Furthermore, from the result of the decomposed error, we find that the reduced error can be attributed to the reduction of variance rather than bias.
 
-In conclusion, in this article, we present an example to illustrate the bias-variance decomposition in the machine learning field. We found that in the case of similar testing errors, there may still exist a lot of possibilities for the source of that error. Therefore, when we need to enhance the algorithm performance, decomposing error into bias and variance is a sensible way to improve the model performance efficiently.
-
 
 ```python
 for regr in [LinearRegression(), DecisionTreeRegressor(), BaggingRegressor(DecisionTreeRegressor(),n_estimators=10)]:
@@ -76,3 +74,6 @@ for regr in [LinearRegression(), DecisionTreeRegressor(), BaggingRegressor(Decis
     27.753457114624506 15.438913619565204 12.314543495059288
     BaggingRegressor(base_estimator=DecisionTreeRegressor())
     19.92063215612648 16.614601149357714 3.3060310067687744
+
+
+In conclusion, in this article, we present an example to illustrate the bias-variance decomposition in the machine learning field. We found that in the case of similar testing errors, there may still exist a lot of possibilities for the source of that error. Therefore, when we need to enhance the algorithm performance, decomposing error into bias and variance is a sensible way to improve the model performance efficiently.
