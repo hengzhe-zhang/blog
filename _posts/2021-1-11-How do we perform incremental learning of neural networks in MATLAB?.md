@@ -4,7 +4,9 @@ title: How do we perform incremental learning of neural networks in MATLAB?
 ---
 
 In the deep learning domain, a lot of successful cases can be accredited by incremental learning techniques. There are two advantages to incremental learning. Firstly, with incremental learning, we don't need to load a great amount of data into our memory. For each training iteration, we only need to load the corresponding data, which significantly improves the system efficiency. Furthermore, incremental learning can help us to reduce training time. For traditional machine learning algorithms, if there is any new data coming in, we need to retrain our model. However, in terms of neural networks, we only need to perform several iterations of incremental learning based on the predetermined parameters, which can significantly reduce the learning time and save computational resources.
+
 In MATLAB, the way of performing incremental learning is not so intuitive. In this article, I will present a simple way to perform incremental learning.
+
 Firstly, we need to load experimental data. In this article, we will use body fat dataset as our experimental data.
 
 ```matlab
