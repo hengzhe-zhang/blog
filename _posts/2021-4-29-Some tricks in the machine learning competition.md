@@ -89,15 +89,15 @@ There are many tricks that can help us get a good score in a machine learning co
 	df[["Salary", "Bonus"]].sum(1)
 	```
 
-​	Aside from additive features, division features are also important. Based on a division feature, for example, we can compute the average hourly wage.
+	Aside from additive features, division features are also important. Based on a division feature, for example, we can compute the average hourly wage.
 
 	```python
 	df = pd.DataFrame({"Job": ["Programmer", "Programmer", "Writer", "Writer"],
 	                   "Salary": [1, 2, 3, 4], "Working Time": [1, 1, 1, 0.5]})
 	df["Salary"] / df["Working Time"]
 	```
-
-​	If our dataset has a time feature, we can use subtraction to create some time interval features.
+	
+	If our dataset has a time feature, we can use subtraction to create some time interval features.
 
 	```python
 	df = pd.DataFrame({
